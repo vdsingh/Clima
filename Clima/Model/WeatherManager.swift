@@ -19,7 +19,7 @@ struct WeatherManager{
     func fetchWeather(cityName: String){
         print("the city name:" + cityName + ".")
         let cityNameCopy = cityName.copy()
-        let urlString = "\(weatherURL)&q=\(cityNameCopy)"
+        let urlString = "\(weatherURL)?&q=\(cityNameCopy)"
         print(urlString)
         performRequest(urlString)
     }
